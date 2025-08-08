@@ -76,11 +76,11 @@ const Portfolio = () => {
       category: "Languages",
       items: [
         { name: "HTML", icon: SiHtml5, color: "text-amber-400" },
-        { name: "CSS", icon: SiCss3, color: "text-stone-400" },
+        { name: "CSS", icon: SiCss3, color: "text-zinc-400" },
         { name: "JavaScript", icon: SiJavascript, color: "text-amber-400" },
-        { name: "Java", icon: FaJava, color: "text-stone-400" },
+        { name: "Java", icon: FaJava, color: "text-zinc-400" },
         { name: "SQL", icon: SiMysql, color: "text-amber-400" },
-        { name: "Python", icon: SiPython, color: "text-stone-400" },
+        { name: "Python", icon: SiPython, color: "text-zinc-400" },
         { name: "Linux", icon: SiLinux, color: "text-white" },
       ],
     },
@@ -88,7 +88,7 @@ const Portfolio = () => {
       category: "Frameworks",
       items: [
         { name: "React.js", icon: FaReact, color: "text-amber-400" },
-        { name: "Node.js", icon: FaNodeJs, color: "text-stone-400" },
+        { name: "Node.js", icon: FaNodeJs, color: "text-zinc-400" },
         { name: "Express.js", icon: SiExpress, color: "text-white" },
         { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-amber-400" },
       ],
@@ -96,25 +96,25 @@ const Portfolio = () => {
     {
       category: "Cloud & DB",
       items: [
-        { name: "Azure", icon: FaCloud, color: "text-stone-400" },
+        { name: "Azure", icon: FaCloud, color: "text-zinc-400" },
         { name: "AWS", icon: FaAws, color: "text-amber-400" },
-        { name: "Oracle", icon: SiOracle, color: "text-stone-400" },
+        { name: "Oracle", icon: SiOracle, color: "text-zinc-400" },
         { name: "MongoDB", icon: SiMongodb, color: "text-amber-400" },
-        { name: "MySQL", icon: SiMysql, color: "text-stone-400" },
+        { name: "MySQL", icon: SiMysql, color: "text-zinc-400" },
         { name: "PostgreSQL", icon: SiPostgresql, color: "text-amber-400" },
-        { name: "Supabase", icon: SiSupabase, color: "text-stone-400" },
+        { name: "Supabase", icon: SiSupabase, color: "text-zinc-400" },
       ],
     },
     {
       category: "Tools",
       items: [
         { name: "Figma", icon: SiFigma, color: "text-amber-400" },
-        { name: "Git", icon: SiGit, color: "text-stone-400" },
+        { name: "Git", icon: SiGit, color: "text-zinc-400" },
         { name: "GitHub", icon: SiGithub, color: "text-white" },
         { name: "Docker", icon: SiDocker, color: "text-amber-400" },
-        { name: "Postman", icon: SiPostman, color: "text-stone-400" },
+        { name: "Postman", icon: SiPostman, color: "text-zinc-400" },
         { name: "XAMPP", icon: SiXampp, color: "text-amber-400" },
-        { name: "VS Code", icon: VscVscode, color: "text-stone-400" },
+        { name: "VS Code", icon: VscVscode, color: "text-zinc-400" },
       ],
     },
   ];
@@ -208,7 +208,7 @@ const Portfolio = () => {
     <div className="bg-black text-white min-h-screen overflow-x-hidden">
       {/* Background Animation */}
       <div className="fixed inset-0 opacity-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/20 via-black/20 to-stone-900/20" />
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/20 via-black/20 to-zinc-900/20" />
         <motion.div
           className="absolute inset-0 bg-gradient-to-tr from-yellow-400/10 via-transparent to-zinc-400/10"
           animate={{
@@ -244,7 +244,7 @@ const Portfolio = () => {
               <motion.button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className={`relative px-3 py-2 text-sm transition-colors ${
+                className={`relative px-3 py-2 text-sm transition-colors cursor-pointer ${
                   activeSection === item.toLowerCase()
                     ? "text-yellow-400"
                     : "text-zinc-300 hover:text-white"
@@ -279,13 +279,13 @@ const Portfolio = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden bg-black/95 border-t border-gray-800"
+              className="md:hidden bg-black/95 border-t border-gray-800 absolute top-full left-0 right-0 z-40"
             >
               {menuItems.map((item) => (
                 <motion.button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className="block w-full text-left px-6 py-3 text-zinc-300 hover:text-yellow-400 hover:bg-zinc-900/50"
+                  className="block w-full text-left px-6 py-3 text-zinc-300 hover:text-yellow-400 hover:bg-zinc-900/50 cursor-pointer"
                   whileHover={{ x: 10 }}
                 >
                   {item}
