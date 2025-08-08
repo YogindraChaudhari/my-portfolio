@@ -75,46 +75,46 @@ const Portfolio = () => {
     {
       category: "Languages",
       items: [
-        { name: "HTML", icon: SiHtml5, color: "text-orange-600" },
-        { name: "CSS", icon: SiCss3, color: "text-blue-500" },
-        { name: "JavaScript", icon: SiJavascript, color: "text-yellow-500" },
-        { name: "Java", icon: FaJava, color: "text-red-500" },
-        { name: "SQL", icon: SiMysql, color: "text-cyan-600" },
-        { name: "Python", icon: SiPython, color: "text-blue-400" },
+        { name: "HTML", icon: SiHtml5, color: "text-amber-400" },
+        { name: "CSS", icon: SiCss3, color: "text-stone-400" },
+        { name: "JavaScript", icon: SiJavascript, color: "text-amber-400" },
+        { name: "Java", icon: FaJava, color: "text-stone-400" },
+        { name: "SQL", icon: SiMysql, color: "text-amber-400" },
+        { name: "Python", icon: SiPython, color: "text-stone-400" },
         { name: "Linux", icon: SiLinux, color: "text-white" },
       ],
     },
     {
       category: "Frameworks",
       items: [
-        { name: "React.js", icon: FaReact, color: "text-cyan-400" },
-        { name: "Node.js", icon: FaNodeJs, color: "text-green-600" },
-        { name: "Express.js", icon: SiExpress, color: "text-gray-400" },
-        { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-500" },
+        { name: "React.js", icon: FaReact, color: "text-amber-400" },
+        { name: "Node.js", icon: FaNodeJs, color: "text-stone-400" },
+        { name: "Express.js", icon: SiExpress, color: "text-white" },
+        { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-amber-400" },
       ],
     },
     {
       category: "Cloud & DB",
       items: [
-        { name: "Azure", icon: FaCloud, color: "text-blue-500" },
-        { name: "AWS", icon: FaAws, color: "text-orange-500" },
-        { name: "Oracle", icon: SiOracle, color: "text-red-600" },
-        { name: "MongoDB", icon: SiMongodb, color: "text-green-500" },
-        { name: "MySQL", icon: SiMysql, color: "text-cyan-600" },
-        { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-600" },
-        { name: "Supabase", icon: SiSupabase, color: "text-green-500" },
+        { name: "Azure", icon: FaCloud, color: "text-stone-400" },
+        { name: "AWS", icon: FaAws, color: "text-amber-400" },
+        { name: "Oracle", icon: SiOracle, color: "text-stone-400" },
+        { name: "MongoDB", icon: SiMongodb, color: "text-amber-400" },
+        { name: "MySQL", icon: SiMysql, color: "text-stone-400" },
+        { name: "PostgreSQL", icon: SiPostgresql, color: "text-amber-400" },
+        { name: "Supabase", icon: SiSupabase, color: "text-stone-400" },
       ],
     },
     {
       category: "Tools",
       items: [
-        { name: "Figma", icon: SiFigma, color: "text-purple-500" },
-        { name: "Git", icon: SiGit, color: "text-red-500" },
+        { name: "Figma", icon: SiFigma, color: "text-amber-400" },
+        { name: "Git", icon: SiGit, color: "text-stone-400" },
         { name: "GitHub", icon: SiGithub, color: "text-white" },
-        { name: "Docker", icon: SiDocker, color: "text-blue-400" },
-        { name: "Postman", icon: SiPostman, color: "text-orange-500" },
-        { name: "XAMPP", icon: SiXampp, color: "text-orange-600" },
-        { name: "VS Code", icon: VscVscode, color: "text-blue-400" },
+        { name: "Docker", icon: SiDocker, color: "text-amber-400" },
+        { name: "Postman", icon: SiPostman, color: "text-stone-400" },
+        { name: "XAMPP", icon: SiXampp, color: "text-amber-400" },
+        { name: "VS Code", icon: VscVscode, color: "text-stone-400" },
       ],
     },
   ];
@@ -208,14 +208,14 @@ const Portfolio = () => {
     <div className="bg-black text-white min-h-screen overflow-x-hidden">
       {/* Background Animation */}
       <div className="fixed inset-0 opacity-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-blue-900/20 to-indigo-900/20" />
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/20 via-black/20 to-stone-900/20" />
         <motion.div
-          className="absolute inset-0 bg-gradient-to-tr from-cyan-500/10 via-transparent to-purple-500/10"
+          className="absolute inset-0 bg-gradient-to-tr from-yellow-400/10 via-transparent to-zinc-400/10"
           animate={{
             background: [
-              "linear-gradient(45deg, rgba(6, 182, 212, 0.1), transparent, rgba(168, 85, 247, 0.1))",
-              "linear-gradient(225deg, rgba(168, 85, 247, 0.1), transparent, rgba(6, 182, 212, 0.1))",
-              "linear-gradient(45deg, rgba(6, 182, 212, 0.1), transparent, rgba(168, 85, 247, 0.1))",
+              "linear-gradient(45deg, rgba(253, 224, 71, 0.1), transparent, rgba(161, 161, 170, 0.1))",
+              "linear-gradient(225deg, rgba(161, 161, 170, 0.1), transparent, rgba(253, 224, 71, 0.1))",
+              "linear-gradient(45deg, rgba(253, 224, 71, 0.1), transparent, rgba(161, 161, 170, 0.1))",
             ],
           }}
           transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
@@ -232,7 +232,7 @@ const Portfolio = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent"
+            className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-zinc-300 bg-clip-text text-transparent"
             style={{ fontFamily: "Inter, system-ui" }}
           >
             Yogindra Chaudhari
@@ -246,8 +246,8 @@ const Portfolio = () => {
                 onClick={() => scrollToSection(item.toLowerCase())}
                 className={`relative px-3 py-2 text-sm transition-colors ${
                   activeSection === item.toLowerCase()
-                    ? "text-cyan-400"
-                    : "text-gray-300 hover:text-white"
+                    ? "text-yellow-400"
+                    : "text-zinc-300 hover:text-white"
                 }`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -256,7 +256,7 @@ const Portfolio = () => {
                 {activeSection === item.toLowerCase() && (
                   <motion.div
                     layoutId="activeTab"
-                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-cyan-400 to-purple-500"
+                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-yellow-400 to-zinc-300"
                   />
                 )}
               </motion.button>
@@ -285,7 +285,7 @@ const Portfolio = () => {
                 <motion.button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className="block w-full text-left px-6 py-3 text-gray-300 hover:text-cyan-400 hover:bg-gray-900/50"
+                  className="block w-full text-left px-6 py-3 text-zinc-300 hover:text-yellow-400 hover:bg-zinc-900/50"
                   whileHover={{ x: 10 }}
                 >
                   {item}
@@ -315,7 +315,7 @@ const Portfolio = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
             >
-              <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-yellow-400 via-amber-500 to-zinc-300 bg-clip-text text-transparent">
                 Yogindra Chaudhari
               </span>
             </motion.h1>
@@ -324,7 +324,7 @@ const Portfolio = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.8 }}
-              className="text-2xl md:text-4xl text-gray-300 mb-8"
+              className="text-2xl md:text-4xl text-zinc-300 mb-8"
               style={{ fontFamily: "Space Grotesk, system-ui" }}
             >
               Full Stack Developer
@@ -334,7 +334,7 @@ const Portfolio = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.1 }}
-              className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12"
+              className="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-12"
               style={{ fontFamily: "Inter, system-ui" }}
             >
               Crafting exceptional digital experiences with modern web
@@ -353,15 +353,15 @@ const Portfolio = () => {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-6 py-3 bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-full hover:border-cyan-400 transition-all group"
+                  className="flex items-center gap-2 px-6 py-3 bg-zinc-900/50 backdrop-blur-sm border border-zinc-700 rounded-full hover:border-yellow-400 transition-all group"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   initial={{ opacity: 0, x: -50 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 1.6 + index * 0.1 }}
                 >
-                  <link.icon className="w-5 h-5 group-hover:text-cyan-400 transition-colors" />
-                  <span className="group-hover:text-cyan-400 transition-colors">
+                  <link.icon className="w-5 h-5 group-hover:text-yellow-400 transition-colors" />
+                  <span className="group-hover:text-yellow-400 transition-colors">
                     {link.name}
                   </span>
                 </motion.a>
@@ -379,7 +379,7 @@ const Portfolio = () => {
               onClick={() => scrollToSection("about")}
               animate={{ y: [0, 10, 0] }}
               transition={{ repeat: Infinity, duration: 2 }}
-              className="text-gray-400 hover:text-cyan-400 transition-colors"
+              className="text-zinc-400 hover:text-yellow-400 transition-colors"
             >
               <ChevronDown className="w-8 h-8" />
             </motion.button>
@@ -398,12 +398,12 @@ const Portfolio = () => {
             className="text-center mb-16"
           >
             <h2
-              className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent"
+              className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-yellow-400 to-zinc-300 bg-clip-text text-transparent"
               style={{ fontFamily: "Inter, system-ui" }}
             >
               About Me
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-purple-500 mx-auto"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-zinc-300 mx-auto"></div>
           </motion.div>
 
           <motion.div
@@ -415,7 +415,7 @@ const Portfolio = () => {
           >
             <div className="space-y-6">
               <p
-                className="text-lg text-gray-300 leading-relaxed"
+                className="text-lg text-zinc-300 leading-relaxed"
                 style={{ fontFamily: "Inter, system-ui" }}
               >
                 I'm a passionate full-stack developer with expertise in modern
@@ -423,7 +423,7 @@ const Portfolio = () => {
                 robust backend systems.
               </p>
               <p
-                className="text-lg text-gray-300 leading-relaxed"
+                className="text-lg text-zinc-300 leading-relaxed"
                 style={{ fontFamily: "Inter, system-ui" }}
               >
                 With a strong foundation in both frontend and backend
@@ -435,7 +435,7 @@ const Portfolio = () => {
                 download="CV_Yogindra_Chaudhari.pdf"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-yellow-500 to-amber-600 rounded-full font-semibold hover:shadow-lg hover:shadow-yellow-500/25 transition-all"
               >
                 <Download className="w-5 h-5" />
                 Download CV
@@ -447,7 +447,7 @@ const Portfolio = () => {
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
-              <div className="aspect-square bg-gradient-to-br from-cyan-500/20 to-purple-600/20 rounded-2xl backdrop-blur-sm border border-gray-700 flex items-center justify-center">
+              <div className="aspect-square bg-gradient-to-br from-yellow-500/20 to-zinc-600/20 rounded-2xl backdrop-blur-sm border border-zinc-700 flex items-center justify-center">
                 <div className="text-6xl">👨‍💻</div>
               </div>
             </motion.div>
@@ -466,12 +466,12 @@ const Portfolio = () => {
             className="text-center mb-16"
           >
             <h2
-              className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent"
+              className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-yellow-400 to-zinc-300 bg-clip-text text-transparent"
               style={{ fontFamily: "Inter, system-ui" }}
             >
               Skills
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-purple-500 mx-auto"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-zinc-300 mx-auto"></div>
           </motion.div>
 
           {/* Marquee Container for all categories */}
@@ -483,7 +483,7 @@ const Portfolio = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                   viewport={{ once: true }}
-                  className="text-2xl md:text-3xl font-bold mb-6 text-gray-300"
+                  className="text-2xl md:text-3xl font-bold mb-6 text-zinc-300"
                 >
                   {skillGroup.category}
                 </motion.h3>
@@ -501,11 +501,11 @@ const Portfolio = () => {
                           key={`${skillGroup.category}-${itemIndex}`}
                           className="flex-shrink-0 mx-4 md:mx-6"
                         >
-                          <div className="flex flex-col items-center justify-center p-4 bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-xl shadow-lg transition-all duration-300 w-28 h-28 md:w-32 md:h-32 group">
+                          <div className="flex flex-col items-center justify-center p-4 bg-zinc-900/50 backdrop-blur-sm border border-zinc-700 rounded-xl shadow-lg transition-all duration-300 w-28 h-28 md:w-32 md:h-32 group">
                             <skill.icon
                               className={`text-4xl md:text-5xl mb-2 ${skill.color} group-hover:scale-110 transition-transform`}
                             />
-                            <span className="text-gray-300 font-medium text-sm text-center">
+                            <span className="text-zinc-300 font-medium text-sm text-center">
                               {skill.name}
                             </span>
                           </div>
@@ -534,12 +534,12 @@ const Portfolio = () => {
             className="text-center mb-16"
           >
             <h2
-              className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent"
+              className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-yellow-400 to-zinc-300 bg-clip-text text-transparent"
               style={{ fontFamily: "Inter, system-ui" }}
             >
               Projects
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-purple-500 mx-auto"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-zinc-300 mx-auto"></div>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -551,19 +551,19 @@ const Portfolio = () => {
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.02, y: -5 }}
-                className="bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover:border-cyan-400/50 transition-all group"
+                className="bg-zinc-900/50 backdrop-blur-sm border border-zinc-700 rounded-2xl p-8 hover:border-yellow-400/50 transition-all group"
               >
                 <div className="flex justify-between items-start mb-4">
                   <h3
-                    className="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors"
+                    className="text-2xl font-bold text-white group-hover:text-yellow-400 transition-colors"
                     style={{ fontFamily: "Space Grotesk, system-ui" }}
                   >
                     {project.title}
                   </h3>
-                  <span className="text-gray-400 text-sm">{project.date}</span>
+                  <span className="text-zinc-400 text-sm">{project.date}</span>
                 </div>
 
-                <p className="text-gray-300 mb-6 leading-relaxed">
+                <p className="text-zinc-300 mb-6 leading-relaxed">
                   {project.description}
                 </p>
 
@@ -571,7 +571,7 @@ const Portfolio = () => {
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-gray-800 text-cyan-400 text-sm rounded-full border border-gray-700"
+                      className="px-3 py-1 bg-zinc-800 text-yellow-400 text-sm rounded-full border border-zinc-700"
                     >
                       {tech}
                     </span>
@@ -582,7 +582,7 @@ const Portfolio = () => {
                   {project.features.map((feature) => (
                     <span
                       key={feature}
-                      className="px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50"
+                      className="px-3 py-1 bg-zinc-900/30 text-zinc-400 text-sm rounded-full border border-zinc-700/50"
                     >
                       {feature}
                     </span>
@@ -596,7 +596,7 @@ const Portfolio = () => {
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-lg text-sm font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all"
+                    className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-600 rounded-lg text-sm font-semibold hover:shadow-lg hover:shadow-yellow-500/25 transition-all"
                   >
                     <ExternalLink className="w-4 h-4" />
                     Live Demo
@@ -607,7 +607,7 @@ const Portfolio = () => {
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg text-sm font-semibold hover:border-cyan-400 transition-all"
+                    className="flex items-center gap-2 px-4 py-2 bg-zinc-800 border border-zinc-600 rounded-lg text-sm font-semibold hover:border-yellow-400 transition-all"
                   >
                     <Github className="w-4 h-4" />
                     Code
@@ -630,12 +630,12 @@ const Portfolio = () => {
             className="text-center mb-16"
           >
             <h2
-              className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent"
+              className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-yellow-400 to-zinc-300 bg-clip-text text-transparent"
               style={{ fontFamily: "Inter, system-ui" }}
             >
               Get In Touch
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-purple-500 mx-auto"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-zinc-300 mx-auto"></div>
           </motion.div>
 
           <motion.div
@@ -645,7 +645,7 @@ const Portfolio = () => {
             viewport={{ once: true }}
             className="max-w-2xl mx-auto text-center"
           >
-            <p className="text-lg text-gray-300 mb-12 leading-relaxed">
+            <p className="text-lg text-zinc-300 mb-12 leading-relaxed">
               I'm always open to discussing new opportunities and interesting
               projects. Let's connect and create something amazing together!
             </p>
@@ -662,14 +662,14 @@ const Portfolio = () => {
                   transition={{ delay: index * 0.1 }}
                   viewport={{ once: true }}
                   whileHover={{ scale: 1.05, y: -5 }}
-                  className="flex items-center gap-4 p-6 bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-2xl hover:border-cyan-400/50 transition-all group"
+                  className="flex items-center gap-4 p-6 bg-zinc-900/50 backdrop-blur-sm border border-zinc-700 rounded-2xl hover:border-yellow-400/50 transition-all group"
                 >
-                  <link.icon className="w-6 h-6 text-cyan-400 group-hover:scale-110 transition-transform" />
+                  <link.icon className="w-6 h-6 text-yellow-400 group-hover:scale-110 transition-transform" />
                   <div className="text-left">
-                    <div className="font-semibold text-white group-hover:text-cyan-400 transition-colors">
+                    <div className="font-semibold text-white group-hover:text-yellow-400 transition-colors">
                       {link.name}
                     </div>
-                    <div className="text-sm text-gray-400">
+                    <div className="text-sm text-zinc-400">
                       {link.name === "Email"
                         ? "yogindrachaudhari816@gmail.com"
                         : `@${link.name}`}
@@ -689,7 +689,7 @@ const Portfolio = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-gray-400"
+            className="text-zinc-400"
           >
             <p>&copy; 2025 Yogindra Chaudhari. All rights reserved.</p>
             <p className="mt-2 text-sm">
@@ -701,7 +701,7 @@ const Portfolio = () => {
 
       {/* Scroll Progress Bar */}
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-400 to-purple-500 origin-left z-50"
+        className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-yellow-400 to-zinc-300 origin-left z-50"
         style={{ scaleX: scrollYProgress }}
       />
     </div>
