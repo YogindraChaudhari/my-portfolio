@@ -201,7 +201,9 @@ const Portfolio = () => {
 
   const scrollToSection = (sectionId) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
-    setIsMenuOpen(false);
+    setTimeout(() => {
+      setIsMenuOpen(false);
+    }, 500);
   };
 
   return (
